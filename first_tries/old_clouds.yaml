@@ -1,0 +1,12 @@
+clouds:
+  mycloud:
+    auth:
+      auth_url: https://adacloud.hpc.cineca.it:5000
+      username: "igentile"
+      password: ""
+      project_id: "03d6cf914517413cb6fb2e251d321a74"
+      project_name: "EUCC_dtwin"
+      user_domain_name: "CINECA"
+      project_domain_id: "02490efae3314c4c8b03d044131f3292"
+    region_name: "RegionOne"
+    identity_api_version: 3

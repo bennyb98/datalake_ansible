@@ -1,0 +1,13 @@
+---
+#this is the main that runs sequentially all the playbooks necessary to 
+#build the datalake
+- import_playbook: create_vm.yml
+- import_playbook: librDL.yml
+- import_playbook: MongoUPDOWN.yml
+
+- hosts: virtualmachines
+  tasks:
+    - name: Execute Python Script about the API creation
+      ansible.builtin.script: /home/centos/ansible_material/crud_plain.py
+      args:
+        executable: python3

@@ -1,0 +1,12 @@
+- name: Checking Dependencies
+  hosts: virtualmachines
+  become: yes
+  tasks:
+    - name: Ensure epel-release is installed
+      yum:
+        name: epel-release
+        state: present
+    - name: Ensure ansible is installed
+      yum:
+        name: ansible
+        state: present

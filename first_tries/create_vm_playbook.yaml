@@ -1,0 +1,20 @@
+- hosts: virtualmachines
+  vars_files:
+    - ivan_secret.yaml
+  tasks:
+    - name: "Create a new VM"
+      openstack.cloud.server:
+        state: present
+        auth:
+          auth_url: "https://adacloud.hpc.cineca.it:5000"
+          username: "igentile"
+          password: "{{ivan_password}}"
+          project_name: "EUCC_dtwin"
+          user_domain_name: "CINECA"
+        name: "my-new-instance"
+        image: "CentOS-7-x86_64-GenericCloud-2009"
+        key_name: "ikey"
+        flavor_ram: 4096
+        network: "dtwin_net"
+        security_groups: "dtwin_secure1"
+

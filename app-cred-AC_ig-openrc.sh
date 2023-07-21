@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+export OS_AUTH_TYPE=v3applicationcredential
+export OS_AUTH_URL=https://adacloud.hpc.cineca.it:5000
+export OS_IDENTITY_API_VERSION=3
+export OS_REGION_NAME="RegionOne"
+export OS_INTERFACE=public
+export OS_APPLICATION_CREDENTIAL_ID=ed203e2a07144ede9a3d6e3db24336aa
+export OS_APPLICATION_CREDENTIAL_SECRET=VommlGjZn3xuYgma4w62f1j_2V7b-T0Hubm15k1Gp1QlAlSFTD4-W0ZPkWdGAJkMVABuGWfmPym32j_HM_0z7g
+
