@@ -1,0 +1,408 @@
+all:
+  children:
+    RegionOne:
+      hosts:
+        ansible_node:
+          ansible_host: 131.175.207.43
+          ansible_ssh_host: 131.175.207.43
+          openstack:
+            access_ipv4: ''
+            access_ipv6: ''
+            addresses:
+              dtwin_net:
+              - OS-EXT-IPS-MAC:mac_addr: fa:16:3e:82:e2:b8
+                OS-EXT-IPS:type: fixed
+                addr: 192.168.0.25
+                version: 4
+              - OS-EXT-IPS-MAC:mac_addr: fa:16:3e:82:e2:b8
+                OS-EXT-IPS:type: floating
+                addr: 131.175.207.43
+                version: 4
+            admin_password: null
+            attached_volumes: []
+            availability_zone: nova
+            block_device_mapping: null
+            cloud:
+              name: openstack
+              region: RegionOne
+            compute_host: null
+            config_drive: ''
+            created_at: '2023-05-31T14:56:09Z'
+            description: null
+            disk_config: AUTO
+            fault: null
+            flavor:
+              description: null
+              disk: 30
+              ephemeral: 0
+              extra_specs: {}
+              id: fl.ada.xs
+              is_disabled: null
+              is_public: true
+              location: null
+              name: fl.ada.xs
+              original_name: fl.ada.xs
+              ram: 15360
+              rxtx_factor: null
+              swap: 0
+              vcpus: 2
+            flavor_id: null
+            has_config_drive: ''
+            host_id: 47d28b5e4ad6f2ad450bad1133f1de0b16c94c17b1b7f4a1472f3e1a
+            host_status: null
+            hostname: null
+            hypervisor_hostname: null
+            id: d5c66eb8-6d8f-45ed-a0ec-985087dea02e
+            image:
+              architecture: null
+              checksum: null
+              container_format: null
+              created_at: null
+              direct_url: null
+              disk_format: null
+              file: null
+              has_auto_disk_config: null
+              hash_algo: null
+              hash_value: null
+              hw_cpu_cores: null
+              hw_cpu_policy: null
+              hw_cpu_sockets: null
+              hw_cpu_thread_policy: null
+              hw_cpu_threads: null
+              hw_disk_bus: null
+              hw_machine_type: null
+              hw_qemu_guest_agent: null
+              hw_rng_model: null
+              hw_scsi_model: null
+              hw_serial_port_count: null
+              hw_video_model: null
+              hw_video_ram: null
+              hw_vif_model: null
+              hw_watchdog_action: null
+              hypervisor_type: null
+              id: 26db7e78-f51c-4c4b-a2a6-9bf928a8839a
+              instance_type_rxtx_factor: null
+              instance_uuid: null
+              is_hidden: null
+              is_hw_boot_menu_enabled: null
+              is_hw_vif_multiqueue_enabled: null
+              is_protected: null
+              kernel_id: null
+              location: null
+              locations: null
+              metadata: null
+              min_disk: null
+              min_ram: null
+              name: null
+              needs_config_drive: null
+              needs_secure_boot: null
+              os_admin_user: null
+              os_command_line: null
+              os_distro: null
+              os_require_quiesce: null
+              os_shutdown_timeout: null
+              os_type: null
+              os_version: null
+              owner: null
+              owner_id: null
+              properties:
+                links:
+                - href: https://adacloud.hpc.cineca.it:8774/images/26db7e78-f51c-4c4b-a2a6-9bf928a8839a
+                  rel: bookmark
+              ramdisk_id: null
+              schema: null
+              size: null
+              status: null
+              store: null
+              tags: &id001 []
+              updated_at: null
+              url: null
+              virtual_size: null
+              visibility: null
+              vm_mode: null
+              vmware_adaptertype: null
+              vmware_ostype: null
+            image_id: null
+            instance_name: null
+            is_locked: false
+            kernel_id: null
+            key_name: ikey
+            launch_index: null
+            launched_at: '2023-05-31T14:56:18.000000'
+            links:
+            - href: https://adacloud.hpc.cineca.it:8774/v2.1/servers/d5c66eb8-6d8f-45ed-a0ec-985087dea02e
+              rel: self
+            - href: https://adacloud.hpc.cineca.it:8774/servers/d5c66eb8-6d8f-45ed-a0ec-985087dea02e
+              rel: bookmark
+            max_count: null
+            metadata: {}
+            min_count: null
+            name: ansible_node
+            networks: null
+            power_state: 1
+            progress: 0
+            project_id: 03d6cf914517413cb6fb2e251d321a74
+            ramdisk_id: null
+            reservation_id: null
+            root_device_name: null
+            scheduler_hints: null
+            security_groups:
+            - name: dtwin_secure1
+            server_groups: null
+            status: ACTIVE
+            tags: []
+            task_state: null
+            terminated_at: null
+            trusted_image_certificates: null
+            updated_at: '2023-07-19T13:22:00Z'
+            user_data: null
+            user_id: 4cdbfbf70f2641709ce902516dec736e
+            vm_state: active
+            volumes: []
+        my_vm:
+          ansible_host: 131.175.204.216
+          ansible_ssh_host: 131.175.204.216
+          openstack:
+            access_ipv4: ''
+            access_ipv6: ''
+            addresses:
+              network_name:
+              - OS-EXT-IPS-MAC:mac_addr: fa:16:3e:c7:70:ba
+                OS-EXT-IPS:type: fixed
+                addr: 192.168.0.83
+                version: 4
+              - OS-EXT-IPS-MAC:mac_addr: fa:16:3e:c7:70:ba
+                OS-EXT-IPS:type: floating
+                addr: 131.175.204.216
+                version: 4
+            admin_password: null
+            attached_volumes:
+            - attachment_id: null
+              bdm_id: null
+              delete_on_termination: false
+              device: null
+              id: d0b9d8b8-6656-4100-b041-3b48028f122e
+              location: null
+              name: null
+              tag: null
+              volume_id: null
+            availability_zone: nova
+            block_device_mapping: null
+            cloud:
+              name: openstack
+              region: RegionOne
+            compute_host: null
+            config_drive: ''
+            created_at: '2023-07-20T12:54:42Z'
+            description: null
+            disk_config: MANUAL
+            fault: null
+            flavor:
+              description: null
+              disk: 10
+              ephemeral: 0
+              extra_specs: {}
+              id: fl.ada.xxs
+              is_disabled: null
+              is_public: true
+              location: null
+              name: fl.ada.xxs
+              original_name: fl.ada.xxs
+              ram: 7680
+              rxtx_factor: null
+              swap: 0
+              vcpus: 1
+            flavor_id: null
+            has_config_drive: ''
+            host_id: 2b25e0c222a46668e372efe2ecbf3e86c1a93ba1833aa2969199cf8c
+            host_status: null
+            hostname: null
+            hypervisor_hostname: null
+            id: 2ceceb61-debf-4005-8660-ca3f6e61f99a
+            image:
+              architecture: null
+              checksum: null
+              container_format: null
+              created_at: null
+              direct_url: null
+              disk_format: null
+              file: null
+              has_auto_disk_config: null
+              hash_algo: null
+              hash_value: null
+              hw_cpu_cores: null
+              hw_cpu_policy: null
+              hw_cpu_sockets: null
+              hw_cpu_thread_policy: null
+              hw_cpu_threads: null
+              hw_disk_bus: null
+              hw_machine_type: null
+              hw_qemu_guest_agent: null
+              hw_rng_model: null
+              hw_scsi_model: null
+              hw_serial_port_count: null
+              hw_video_model: null
+              hw_video_ram: null
+              hw_vif_model: null
+              hw_watchdog_action: null
+              hypervisor_type: null
+              id: null
+              instance_type_rxtx_factor: null
+              instance_uuid: null
+              is_hidden: null
+              is_hw_boot_menu_enabled: null
+              is_hw_vif_multiqueue_enabled: null
+              is_protected: null
+              kernel_id: null
+              location: null
+              locations: null
+              metadata: null
+              min_disk: null
+              min_ram: null
+              name: null
+              needs_config_drive: null
+              needs_secure_boot: null
+              os_admin_user: null
+              os_command_line: null
+              os_distro: null
+              os_require_quiesce: null
+              os_shutdown_timeout: null
+              os_type: null
+              os_version: null
+              owner: null
+              owner_id: null
+              properties: null
+              ramdisk_id: null
+              schema: null
+              size: null
+              status: null
+              store: null
+              tags: *id001
+              updated_at: null
+              url: null
+              virtual_size: null
+              visibility: null
+              vm_mode: null
+              vmware_adaptertype: null
+              vmware_ostype: null
+            image_id: null
+            instance_name: null
+            is_locked: false
+            kernel_id: null
+            key_name: my_key
+            launch_index: null
+            launched_at: '2023-07-20T12:55:08.000000'
+            links:
+            - href: https://adacloud.hpc.cineca.it:8774/v2.1/servers/2ceceb61-debf-4005-8660-ca3f6e61f99a
+              rel: self
+            - href: https://adacloud.hpc.cineca.it:8774/servers/2ceceb61-debf-4005-8660-ca3f6e61f99a
+              rel: bookmark
+            max_count: null
+            metadata: {}
+            min_count: null
+            name: my_vm
+            networks: null
+            power_state: 1
+            progress: 0
+            project_id: 03d6cf914517413cb6fb2e251d321a74
+            ramdisk_id: null
+            reservation_id: null
+            root_device_name: null
+            scheduler_hints: null
+            security_groups:
+            - name: my_security_group
+            server_groups: null
+            status: ACTIVE
+            tags: []
+            task_state: null
+            terminated_at: null
+            trusted_image_certificates: null
+            updated_at: '2023-07-20T12:55:08Z'
+            user_data: null
+            user_id: 4cdbfbf70f2641709ce902516dec736e
+            vm_state: active
+            volumes:
+            - attachments:
+              - attached_at: '2023-07-20T12:55:06.000000'
+                attachment_id: 0c5fa29a-9982-4b63-ba21-07bbcc0c5ac2
+                device: /dev/vda
+                host_name: null
+                id: d0b9d8b8-6656-4100-b041-3b48028f122e
+                server_id: 2ceceb61-debf-4005-8660-ca3f6e61f99a
+                volume_id: d0b9d8b8-6656-4100-b041-3b48028f122e
+              availability_zone: nova
+              consistency_group_id: null
+              created_at: '2023-07-20T12:54:45.000000'
+              description: ''
+              extended_replication_status: null
+              group_id: null
+              host: null
+              id: d0b9d8b8-6656-4100-b041-3b48028f122e
+              image_id: null
+              is_bootable: true
+              is_encrypted: false
+              is_multiattach: false
+              metadata: {}
+              migration_id: null
+              migration_status: null
+              name: ''
+              project_id: 03d6cf914517413cb6fb2e251d321a74
+              replication_driver_data: null
+              replication_status: null
+              scheduler_hints: null
+              size: 10
+              snapshot_id: null
+              source_volume_id: null
+              status: in-use
+              updated_at: '2023-07-20T12:55:06.000000'
+              user_id: 4cdbfbf70f2641709ce902516dec736e
+              volume_image_metadata:
+                checksum: 8b9411110b8cc5596eb17c60c991ef03
+                container_format: bare
+                description: CentOS-7-x86_64-GenericCloud-2009.qcow2, last modified
+                  2020-11-12
+                disk_format: qcow2
+                image_id: b7ab9560-9df4-45ea-9818-a36587ab1cc5
+                image_name: CentOS-7-x86_64-GenericCloud-2009
+                min_disk: '0'
+                min_ram: '0'
+                signature_verified: 'False'
+                size: '888995840'
+              volume_type: __DEFAULT__
+    RegionOne_nova:
+      hosts:
+        ansible_node: {}
+        my_vm: {}
+    flavor-fl.ada.xs:
+      hosts:
+        ansible_node: {}
+    flavor-fl.ada.xxs:
+      hosts:
+        my_vm: {}
+    image-None:
+      hosts:
+        ansible_node: {}
+        my_vm: {}
+    instance-2ceceb61-debf-4005-8660-ca3f6e61f99a:
+      hosts:
+        my_vm: {}
+    instance-d5c66eb8-6d8f-45ed-a0ec-985087dea02e:
+      hosts:
+        ansible_node: {}
+    nova:
+      hosts:
+        ansible_node: {}
+        my_vm: {}
+    openstack:
+      hosts:
+        ansible_node: {}
+        my_vm: {}
+    openstack_RegionOne:
+      hosts:
+        ansible_node: {}
+        my_vm: {}
+    openstack_RegionOne_nova:
+      hosts:
+        ansible_node: {}
+        my_vm: {}
+    ungrouped: {}
